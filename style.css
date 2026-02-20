@@ -379,3 +379,52 @@ footer {
         text-align: center;
     }
 }
+/* --- MOBILE SETTINGS (Add at the very end of style.css) --- */
+
+@media (max-width: 768px) {
+    /* 1. Universal Fix: Koi bhi cheez screen se bahar nahi jayegi */
+    .container {
+        padding: 0 20px !important;
+        width: 100% !important;
+    }
+
+    /* 2. Hero Section Fix */
+    .hero h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.1 !important;
+    }
+    
+    .hero p {
+        font-size: 1rem !important;
+    }
+
+    /* 3. HTML Inline Grid Fix (Sabse important) */
+    /* Ye line aapke About aur Quality sections ko fix karegi */
+    [style*="display: grid"] {
+        grid-template-columns: 1fr !important; /* Do column ko ek karega */
+        gap: 20px !important;
+    }
+
+    [style*="display: flex"] {
+        flex-direction: column !important; /* Side-by-side cheezon ko upar-niche karega */
+    }
+
+    /* 4. Images Fix */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        border-radius: 15px !important;
+    }
+
+    /* 5. Contact & Order Form Fix */
+    input, textarea, button {
+        width: 100% !important;
+        font-size: 16px !important; /* Mobile typing ke liye best */
+    }
+
+    /* 6. Footer Fix */
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+    }
+}
