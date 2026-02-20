@@ -1,42 +1,158 @@
-<div class="fade-up"
-    style="background: #FAFAFA; padding: 60px; border-radius: 30px; border: 1px solid rgba(0,0,0,0.05);">
-    <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Send a Message</h2>
-    <p style="color: #636E72; margin-bottom: 40px;">Have a bulk order or a special event? Fill out the form
-        and we'll get back to you within 24 hours.</p>
+<!DOCTYPE html>
+<html lang="en">
 
-    <form name="contact" method="POST" data-netlify="true" style="display: grid; gap: 20px;">
-        
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-                <label style="font-weight: 600; font-size: 0.9rem;">Full Name</label>
-                <input type="text" name="full_name" placeholder="Shiv" required
-                    style="padding: 15px; border-radius: 10px; border: 1px solid #ddd; outline: none; font-family: inherit;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Shiv Sweets Bhopal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar scrolled">
+        <div class="logo">Shiv<span>Sweets</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#showcase">Our Sweets</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="order.html" class="cta-btn" style="text-decoration: none;">Order Now</a>
+    </nav>
+
+    <header class="hero"
+        style="height: 50vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/samosa-bg.png'); background-size: cover; background-position: center;">
+        <div class="container hero-overlay">
+            <h1 class="fade-up">Get in <span>Touch</span></h1>
+            <p class="fade-up">We'd love to hear from you. Visit our boutique or drop a message.</p>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 100px 0;">
+        <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px;">
+            <div class="fade-up">
+                <h2 style="font-size: 2.5rem; margin-bottom: 30px;">Information</h2>
+                <div style="margin-bottom: 40px;">
+                    <div style="display: flex; gap: 20px; align-items: start; margin-bottom: 30px;">
+                        <div
+                            style="width: 50px; height: 50px; border-radius: 50%; background: #FFF9F3; display: flex; align-items: center; justify-content: center; color: #FF9F43; font-size: 1.2rem;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Our Location</h4>
+                            <p style="color: #636E72;">C-4, Kolar Rd, Mandakini Society, Mandakini Colony, Kolar Rd,
+                                Bhopal, Madhya Pradesh 462042</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 20px; align-items: start; margin-bottom: 30px;">
+                        <div
+                            style="width: 50px; height: 50px; border-radius: 50%; background: #FFF9F3; display: flex; align-items: center; justify-content: center; color: #FF9F43; font-size: 1.2rem;">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Call Us</h4>
+                            <p style="color: #636E72;">+91 755 247 2472<br>Mon - Sun: 9:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 20px; align-items: start;">
+                        <div
+                            style="width: 50px; height: 50px; border-radius: 50%; background: #FFF9F3; display: flex; align-items: center; justify-content: center; color: #FF9F43; font-size: 1.2rem;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Email Us</h4>
+                            <p style="color: #636E72;">hello@shivsweets.com<br>support@shivsweets.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Shiv+Sweets+C-4,+Kolar+Rd,+Mandakini+Society,+Bhopal"
+                    target="_blank" style="text-decoration: none;">
+                    <div style="width: 100%; height: 250px; border-radius: 20px; overflow: hidden; background: #eee;">
+                        <div
+                            style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: url('https://www.google.com/maps/vt/pb=!1m4!1m3!1i13!2i4683!3i3124!2m3!1e0!2sm!3i420120488!3m8!2sen!2sus!5e1105!12m4!1e68!2m2!1sset!2sRoadmap!4e0!5m1!1sfsy!11m2!1sen!2sus') center/cover;">
+                            <div
+                                style="background: white; padding: 10px 20px; border-radius: 50px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); font-weight: 600; color: #2D3436;">
+                                Open in Google Maps</div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-                <label style="font-weight: 600; font-size: 0.9rem;">Email Address</label>
-                <input type="email" name="email" placeholder="shiv@example.com" required
-                    style="padding: 15px; border-radius: 10px; border: 1px solid #ddd; outline: none; font-family: inherit;">
+
+            <div class="fade-up"
+                style="background: #FAFAFA; padding: 60px; border-radius: 30px; border: 1px solid rgba(0,0,0,0.05);">
+                <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Send a Message</h2>
+                <p style="color: #636E72; margin-bottom: 40px;">Have a bulk order or a special event? Fill out the form
+                    and we'll get back to you within 24 hours.</p>
+                
+                <form name="contact" method="POST" data-netlify="true" style="display: grid; gap: 20px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <label style="font-weight: 600; font-size: 0.9rem;">Full Name</label>
+                            <input type="text" name="name" placeholder="Shiv" required
+                                style="padding: 15px; border-radius: 10px; border: 1px solid #ddd; outline: none; font-family: inherit;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <label style="font-weight: 600; font-size: 0.9rem;">Email Address</label>
+                            <input type="email" name="email" placeholder="shiv@example.com" required
+                                style="padding: 15px; border-radius: 10px; border: 1px solid #ddd; outline: none; font-family: inherit;">
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <label style="font-weight: 600; font-size: 0.9rem;">Subject</label>
+                        <select name="subject"
+                            style="padding: 15px; border-radius: 10px; border: 1px solid #ddd; outline: none; font-family: inherit; background: white;">
+                            <option>Bulk Order Inquiry</option>
+                            <option>Corporate Gifting</option>
+                            <option>Feedback</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <label style="font-weight: 600; font-size: 0.9rem;">Your Message</label>
+                        <textarea name="message" placeholder="Write your message here..." required
+                            style="padding: 15px; border-radius: 10px; border: 1px solid #ddd; outline: none; font-family: inherit; min-height: 150px; resize: none;"></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn"
+                        style="width: 100%; padding: 18px; font-size: 1rem; margin-top: 10px; cursor: pointer;">Send Message</button>
+                </form>
             </div>
         </div>
+    </main>
 
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-            <label style="font-weight: 600; font-size: 0.9rem;">Subject</label>
-            <select name="subject"
-                style="padding: 15px; border-radius: 10px; border: 1px solid #ddd; outline: none; font-family: inherit; background: white;">
-                <option value="Bulk Order">Bulk Order Inquiry</option>
-                <option value="Corporate Gifting">Corporate Gifting</option>
-                <option value="Feedback">Feedback</option>
-                <option value="Other">Other</option>
-            </select>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo footer-logo">Shiv<span>Sweets</span></div>
+                    <p>Maintaining the legacy of taste and purity in Bhopal since generations.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#showcase">Our Sweets</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Visit Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> C-4, Kolar Rd, Mandakini Society, Bhopal</li>
+                        <li><i class="fas fa-phone"></i> +91 755 247 2472</li>
+                        <li><i class="fas fa-envelope"></i> hello@shivsweets.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Shiv Sweets Bhopal. All Rights Reserved. Pure. Fresh. Traditional.</p>
+            </div>
         </div>
+    </footer>
 
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-            <label style="font-weight: 600; font-size: 0.9rem;">Your Message</label>
-            <textarea name="message" placeholder="Write your message here..." required
-                style="padding: 15px; border-radius: 10px; border: 1px solid #ddd; outline: none; font-family: inherit; min-height: 150px; resize: none;"></textarea>
-        </div>
+    <script src="script.js"></script>
+</body>
 
-        <button type="submit" class="cta-btn"
-            style="width: 100%; padding: 18px; font-size: 1rem; margin-top: 10px; cursor: pointer;">Send Message</button>
-    </form>
-</div>
+</html>
