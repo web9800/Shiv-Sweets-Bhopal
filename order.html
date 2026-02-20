@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Online | Shiv Sweets Bhopal</title>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,9 +29,7 @@
 
         <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 50px;">
             <div class="fade-up">
-                <!-- Product List -->
                 <div style="display: grid; gap: 20px;">
-                    <!-- Item 1 -->
                     <div
                         style="display: flex; gap: 20px; padding: 20px; border: 1px solid #eee; border-radius: 15px; align-items: center;">
                         <img src="assets/jalebi.jpg" alt="Jalebi"
@@ -51,7 +48,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Item 2 -->
                     <div
                         style="display: flex; gap: 20px; padding: 20px; border: 1px solid #eee; border-radius: 15px; align-items: center;">
                         <img src="assets/ladoo.png" alt="Ladoo"
@@ -63,43 +59,39 @@
                         <div style="text-align: right;">
                             <p style="font-weight: 700; color: #FF9F43; margin-bottom: 10px;">₹ 600</p>
                             <div
-                                style="display: flex; align-items: center; gap: 15px; border: 1px solid #ddd; padding: 5px 15px; border-radius: 50px;">
+                                style="display: flex; align-items: center; gap: 15px; border: 1px solid #ddd; padding: 5px 15px; border-radius: 50px; cursor: pointer;">
                                 <span style="font-size: 0.9rem;">Add to Box</span>
                             </div>
                         </div>
                     </div>
-                    <!-- Item 3 -->
                     <div
                         style="display: flex; gap: 20px; padding: 20px; border: 1px solid #eee; border-radius: 15px; align-items: center;">
                         <img src="assets/rasmalai.png" alt="Rasmalai"
                             style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
                         <div style="flex: 1;">
                             <h3 style="margin-bottom: 5px;">Kesar Rasmalai (Pack of 4)</h3>
-                            <p style="color: #636E72; font-size: 0.9rem;">Premium saffron-infused cottage cheese
-                                patties.</p>
+                            <p style="color: #636E72; font-size: 0.9rem;">Premium saffron-infused cottage cheese patties.</p>
                         </div>
                         <div style="text-align: right;">
                             <p style="font-weight: 700; color: #FF9F43; margin-bottom: 10px;">₹ 320</p>
                             <div
-                                style="display: flex; align-items: center; gap: 15px; border: 1px solid #ddd; padding: 5px 15px; border-radius: 50px;">
+                                style="display: flex; align-items: center; gap: 15px; border: 1px solid #ddd; padding: 5px 15px; border-radius: 50px; cursor: pointer;">
                                 <span style="font-size: 0.9rem;">Add to Box</span>
                             </div>
                         </div>
                     </div>
-                    <!-- Item 4 -->
                     <div
                         style="display: flex; gap: 20px; padding: 20px; border: 1px solid #eee; border-radius: 15px; align-items: center;">
                         <img src="assets/gift-box.png" alt="Gift Box"
                             style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
                         <div style="flex: 1;">
                             <h3 style="margin-bottom: 5px;">Royal Heritage Gift Box</h3>
-                            <p style="color: #636E72; font-size: 0.9rem;">Premium assortment in designer festive
-                                packaging.</p>
+                            <p style="color: #636E72; font-size: 0.9rem;">Premium assortment in designer festive packaging.</p>
                         </div>
                         <div style="text-align: right;">
                             <p style="font-weight: 700; color: #FF9F43; margin-bottom: 10px;">₹ 1200</p>
                             <div
-                                style="display: flex; align-items: center; gap: 15px; border: 1px solid #ddd; padding: 5px 15px; border-radius: 50px;">
+                                style="display: flex; align-items: center; gap: 15px; border: 1px solid #ddd; padding: 5px 15px; border-radius: 50px; cursor: pointer;">
                                 <span style="font-size: 0.9rem;">Add to Box</span>
                             </div>
                         </div>
@@ -107,11 +99,14 @@
                 </div>
             </div>
 
-            <!-- Order Summary -->
             <div class="fade-up">
-                <div
+                <form name="order-form" method="POST" data-netlify="true"
                     style="background: #FAFAFA; padding: 30px; border-radius: 20px; border: 1px solid #eee; position: sticky; top: 120px;">
+                    
                     <h3 style="margin-bottom: 25px;">Order Summary</h3>
+                    
+                    <input type="hidden" name="order-details" value="Shahi Jalebi (500g) x 1">
+                    
                     <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
                         <span style="color: #636E72;">Shahi Jalebi (500g) x 1</span>
                         <span>₹ 250</span>
@@ -128,21 +123,23 @@
                         <div style="display: flex; justify-content: space-between; margin-top: 20px;">
                             <h4 style="font-size: 1.25rem;">Total</h4>
                             <h4 style="font-size: 1.25rem; color: #FF9F43;">₹ 250</h4>
+                            <input type="hidden" name="total-amount" value="₹ 250">
                         </div>
                     </div>
 
                     <div style="margin: 30px 0;">
                         <h4 style="font-size: 0.9rem; margin-bottom: 15px;">Delivery Details</h4>
-                        <input type="text" placeholder="Your Address"
+                        <input type="text" name="address" placeholder="Your Address" required
                             style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ddd; margin-bottom: 10px; font-family: inherit;">
-                        <input type="text" placeholder="Phone Number"
+                        <input type="text" name="phone" placeholder="Phone Number" required
                             style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-family: inherit;">
                     </div>
 
-                    <button class="cta-btn" style="width: 100%; padding: 15px;">Proceed to Checkout</button>
+                    <button type="submit" class="cta-btn" style="width: 100%; padding: 15px; cursor: pointer; border: none;">Proceed to Checkout</button>
+                    
                     <p style="text-align: center; font-size: 0.75rem; color: #636E72; margin-top: 15px;">Secure Payment
                         Powered by Razorpay</p>
-                </div>
+                </form>
             </div>
         </div>
     </main>
